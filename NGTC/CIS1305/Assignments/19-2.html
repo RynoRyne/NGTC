@@ -1,0 +1,89 @@
+<!--
+Name:Ryne Brown
+Class:1305 
+Instructor: Paul Long
+-->
+<!DOCTYPE html>
+<!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
+<html lang="en">
+<!--the "brains" of the webpage-->
+  
+  <head>
+
+    <!--various metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This displays the title of the webpage-->
+    <title>19-1</title>
+    <!--more metadata for responsive design-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--below links to an external style sheet-->
+    
+    <link rel="stylesheet" href="" />
+
+  </head>
+  
+  <!--the body contains the actual content of the webpage-->
+  
+  <body>
+  <div id="wrapper">  
+    <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
+    
+    <style>
+
+      p {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    
+    </style>
+    
+    <!--top of the web page-->
+    
+    <header>
+        <h1>19-1</h1>
+    </header>
+    
+    <!--an area set aside for navigating the webpage-->
+    
+    <nav>
+
+    </nav>
+
+    <!--the "meat and potatoes of the page, this where most of the content is"-->
+    
+    <main>
+        <script>
+            function show_prompt()
+            {
+            var nameFirst=prompt("Please enter your first name");
+          
+            var nameLast=prompt("Please enter your last name");
+            
+            //var character2=prompt("Please a character");
+            
+            //var character3=prompt("Please a character");
+
+            document.getElementById("demo").innerHTML =
+            (nameLast + "," + nameFirst);
+            }
+            
+            </script>
+            
+            <p>Please, click the button below to process the input.</p>
+            
+            <input type="button" onclick="show_prompt()" value="Show prompt box" />
+            
+            <p id="demo"></p>
+    </main>
+
+    <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+    
+    <footer>
+      <small>&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong> Made with love by: Ryne Scott Brown</small>
+    </footer>
+
+    </div>
+    </body>
+</html>

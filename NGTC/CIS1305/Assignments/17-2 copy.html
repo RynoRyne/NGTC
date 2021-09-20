@@ -1,0 +1,121 @@
+<!--
+Name:Ryne Brown
+Class:1305 
+Instructor: Paul Long
+-->
+<!DOCTYPE html>
+<!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
+<html lang="en">
+<!--the "brains" of the webpage-->
+  
+  <head>
+
+    <!--various metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This displays the title of the webpage-->
+    <title>17-2</title>
+    <!--more metadata for responsive design-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--below links to an external style sheet-->
+    
+    <link rel="stylesheet" href="" />
+
+  </head>
+  
+  <!--the body contains the actual content of the webpage-->
+  
+  <body>
+  <div id="wrapper">  
+    <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
+    
+    <style>
+
+      p {
+        font-family: 'Courier New', Courier, monospace;
+      }
+    
+    </style>
+    
+    <!--top of the web page-->
+    
+    <header>
+        <h1>17-2</h1>
+    </header>
+    
+    <!--an area set aside for navigating the webpage-->
+    
+    <nav>
+
+    </nav>
+
+    <!--the "meat and potatoes of the page, this where most of the content is"-->
+    
+    <main>
+        <script>
+            function show_prompt()
+            {
+
+              //created a prompt to ask for integer input
+
+            var int1=prompt("Please, enter an integer."," ");
+
+            //the below code converts the input into an actual integer
+
+            int1 = parseInt(int1);
+
+            var int2=prompt("Please, enter an integer not equal to 0, please."," ");
+
+            int2 = parseInt(int2);
+
+            var add;
+            add= int1 + int2;
+
+            var sub;
+            sub = int1 - int2;
+
+            var multi;
+            multi = int1 * int2;
+
+            var div;
+            div = int1 / int2;
+
+            //var int1=prompt("Please enter your name"," ");//
+            //var int2=prompt("Please enter your name"," ");//
+            
+            document.getElementById("demo1").innerHTML =
+            ("The result of adding the numbers is " + add + ".");
+            document.getElementById("demo2").innerHTML =
+            ("The result of subtracting the numbers is " + sub + ".");
+            document.getElementById("demo3").innerHTML =
+            ("The result of multipliying the numbers is " + multi + ".");
+            document.getElementById("demo4").innerHTML =
+            ("The result of dividing the numbers is " + div + ".");
+
+            }
+            
+            </script>
+            
+            <p>Please, click the button below to process the input</p>
+            <p>Do not enter zero for second integer</p>
+            
+            <input type="button" onclick="show_prompt()" value="Show prompt box" />
+            
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+            <p id="demo4"></p>
+    </main>
+
+    <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+    
+    <footer>
+      <small>&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong> Made with love by: Ryne Scott Brown</small>
+    </footer>
+
+    </div>
+    </body>
+</html>
+<!--end of document :)-->
