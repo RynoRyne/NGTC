@@ -6,10 +6,9 @@ Instructor: Paul Long
 <!DOCTYPE html>
 <!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
 <html lang="en">
-<!--the "brains" of the webpage-->
-  
-  <head>
+  <!--the "brains" of the webpage-->
 
+  <head>
     <!--various metadata-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,78 +17,100 @@ Instructor: Paul Long
     <!--more metadata for responsive design-->
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!--below links to an external style sheet-->
-    
+
     <link rel="stylesheet" href="" />
-
   </head>
-  
+
   <!--the body contains the actual content of the webpage-->
-  
+
   <body>
-  <div id="wrapper">  
-    <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
-    
-    <style>
+    <div id="wrapper">
+      <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
 
-      body {
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        background-color: rgb(2, 2, 2);
-      }
-    
-    </style>
-    
-    <!--top of the web page-->
-    
-    <header>
-        <h1>Project2
-        </h1>
-    </header>
-    
-    <!--an area set aside for navigating the webpage-->
-    
-    <nav>
+      <style>
+        body {
+          font-family: "Courier New", Courier, monospace;
+          color: white;
+          background-color: rgb(2, 2, 2);
+        }
+        button {
+          font-size: 24px;
+          background-color: crimson;
+          border-radius: 25%;
+        }
+      </style>
 
-    </nav>
+      <!--top of the web page-->
 
-    <!--the "meat and potatoes of the page, this where most of the content is"-->
-    
-    <main>
-       
-      <p id="demo1"></p>
-      <p id="demo2"></p>
-      <p id="demo3"></p>
+      <header>
+        <h1 align="center">Project2</h1>
+      </header>
+
+      <!--an area set aside for navigating the webpage-->
+
+      <nav></nav>
+
+      <!--the "meat and potatoes of the page, this where most of the content is"-->
+
+      <main>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
 
         <script>
-          fuction prompt() {
-            prompt=('Please enter a number.')
+          function show_prompt() {
+            let num1 = prompt("Please enter a number.");
+            let num2 = prompt("Please enter a second number.");
+            parseFloat(num1)
+            parseFloat(num2)
+
+          
+            document.getElementById("demo1").innerHTML =("The two orignal numbers were " + num1 + " and " + num2) + "." ;
+
+            document.getElementById("demo2").innerHTML =(num1 + " squared equals " + num1**2) + ".";
+
+            document.getElementById("demo3").innerHTML =(num2 + " divided in half equals " + num2 / 2 + ".");
+
+            document.getElementById("demo4").innerHTML =("Thank you for using this program have a wonderful day!");
           }
-          /*document.getElementById("demo1").innerHTML =(7 + 3);
-          
-          document.getElementById("demo2").innerHTML =(72 * 41);
 
-          document.getElementById("demo3").innerHTML =(3 - 459);
+        </script>
+        <div id="button"></div>
+        <input
+          type="button"
+          onclick="show_prompt()"
+          value="Engage!"
+          style="
+            font-size: 24px;
+            background-color: crimson;
+            border-radius: 50%;
+            color: whitesmoke;
+  position: absolute;
+  left: 47%
+          "
+        />
+      </div>
+      </main>
 
-          document.getElementById("demo4").innerHTML =(2 / 14);
+      <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
 
-        //document.getElementById("demo").innerHTML = Math.pow(2.3);
-
-          document.getElementById("demo5").innerHTML =(2 * 3) + 7 ^ 2 / 3;
-          */
-           </script>
-          <input type="button" onclicke="show_prompt()" value="Start Math Program" />
-          
-    </main>
-
-    <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
-    
-    <footer>
-      <small>&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong> Made with love by: Ryne Scott Brown</small>
-    </footer>
-
+      <footer>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p align="center">
+          <small
+          >&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong> Made with
+          love by: Ryne Scott Brown</small
+        ></p>
+      </footer>
     </div>
-    </body>
+  </body>
 </html>
 <!--end of document :)-->
