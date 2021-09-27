@@ -1,4 +1,5 @@
 <!--
+Assignment 19-3  
 Name:Ryne Brown
 Class:1305 
 Instructor: Paul Long
@@ -13,7 +14,7 @@ Instructor: Paul Long
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--This displays the title of the webpage-->
-    <title>19-1</title>
+    <title>19-2 Win Loss Calculator</title>
     <!--more metadata for responsive design-->
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -38,7 +39,7 @@ Instructor: Paul Long
       <!--top of the web page-->
 
       <header>
-        <h1>19-1</h1>
+        <h1>19-3: Sale Sign Generator</h1>
       </header>
 
       <!--an area set aside for navigating the webpage-->
@@ -48,26 +49,25 @@ Instructor: Paul Long
       <!--the "meat and potatoes of the page, this where most of the content is"-->
 
       <main>
+        <p id="message1"></p>
+        <p id="message2"></p>
+        <p id="message3"></p>
         <script>
-          function show_prompt() {
-            var nameFirst = prompt("Please enter your first name");
+          {
+            let tenPercent = 10;
+            let thirtyPercent = 30;
+            let fiftyPercent = 50;
+            let saleMessage1 = "SALE! Everything on this shelf ";
+            let saleMessage2 = "% off!";
 
-            var nameLast = prompt("Please enter your last name");
-
-            //var character2=prompt("Please a character");
-
-            //var character3=prompt("Please a character");
-
-            document.getElementById("demo").innerHTML =
-              nameLast + "," + nameFirst;
+            document.getElementById("message1").innerHTML =
+              saleMessage1 + tenPercent + saleMessage2;
+            document.getElementById("message2").innerHTML =
+              saleMessage1 + thirtyPercent + saleMessage2;
+            document.getElementById("message3").innerHTML =
+              saleMessage1 + fiftyPercent + saleMessage2;
           }
         </script>
-
-        <p>Please, click the button below to process the input.</p>
-
-        <input type="button" onclick="show_prompt()" value="Show prompt box" />
-
-        <p id="demo"></p>
       </main>
 
       <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
@@ -81,5 +81,3 @@ Instructor: Paul Long
     </div>
   </body>
 </html>
-"The percantage of games won by " + teamName + "is " + percentageWon + ". Thank
-you for using this program!";
