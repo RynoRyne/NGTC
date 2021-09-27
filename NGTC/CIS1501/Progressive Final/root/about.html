@@ -7,22 +7,23 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--This displays the title of the webpage-->
-    <title>This is a template!!!</title>
+    <title>Chef Life: About</title>
     <!--more metadata-->
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <!--the body contains the actual content of the webpage-->
   <body>
     <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
     <style>
       body {
-        background-color: rgb(223, 215, 206);
+        background-color: rgb(2, 2, 2);
       }
 
       nav {
         font-family: "Courier New", Courier, monospace;
+        font-size: larger;
       }
 
       ul {
@@ -35,27 +36,56 @@
         display: inline;
       }
 
-      p {
+      body {
         font-family: "Courier New", Courier, monospace;
+        color: rgb(255, 255, 255);
       }
+
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+        color: rgb(255, 255, 255);
+      }
+
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: rgb(155, 137, 137);
+        background-color: rgb(255, 255, 255);
       }
 
       li {
         display: inline;
-        color: white;
+        color: rgb(10, 10, 10);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
       }
+      a:link {
+        color: rgb(187, 3, 3);
+        background-color: transparent;
+        text-decoration: none;
+      }
 
+      a:visited {
+        color: rgb(255, 1, 44);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
       li a:hover {
-        background-color: rgb(252, 0, 0);
+        background-color: #111;
       }
     </style>
     <!--top of the web page-->
@@ -63,8 +93,9 @@
     <!--an area set aside for navigating the webpage-->
     <nav>
       <!--A constantly evolving navigation bar, this is the third time i have revised it, adding experimental css-->
+
       <div id="topbar">
-        <ul style="text-align: center">
+        <ul style="text-align: center" style>
           <li><a href="index.html">&#9783;&nbspHome</a></li>
           <li class="divider">&nbsp|&nbsp</li>
           <li><a href="discipline.html">Discipline</a></li>
@@ -80,7 +111,34 @@
       </div>
     </nav>
     <!--the "meat and potatoes of the page, this where most of the content is"-->
-    <main></main>
+    <main>
+      <div id="about">
+        <h1>About Me</h1>
+        <p>
+          I have worked in the culinary field for more than a decade and though
+          I am now attempting to leave it, I still have a spot for it and hope
+          that future proscpective chefs and cooks can learn something from this
+          site. The foodservice industry is fast paced and cut-throat to certain
+          degree but it can be rewarding and amazing for the right kind of
+          person. I found this to be the case for the better part of 13 years,
+          and while I may no longer desire to be a chef, the passion and love of
+          food is still there. I currently am the Chef de Cuisine at
+          <a href="http://www.fortifyclayton.com/fortifypi/">Fortfiy Pi</a>
+          in Clayton, Georgia and am studying Web Application Development at
+          North Georgia Technical College. If you wish to sample my food drop by
+          Fortify Pi and check it out, and if you find yourself there on a
+          Friday or Saturday night let me know you are there and I'll come say
+          "hey". -Ryne Brown
+          <br />
+          <img
+            src="Images/profile pic.jpg"
+            height="300"
+            width="300"
+            alt="profile picture"
+          />
+        </p>
+      </div>
+    </main>
     <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
     <footer>
       <small>&copy; Copyright 2021, Ryno Enterprieses</small>
