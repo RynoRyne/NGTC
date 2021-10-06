@@ -1,0 +1,118 @@
+<!--
+Assignment 24-1  
+Name:Ryne Brown
+Class:1305 
+Instructor: Paul Long
+-->
+<!DOCTYPE html>
+<!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
+<html lang="en">
+  <!--the "brains" of the webpage-->
+
+  <head>
+    <!--various metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This displays the title of the webpage-->
+    <title>24-1</title>
+    <!--more metadata for responsive design-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--below links to an external style sheet-->
+
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        h1 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: white;
+        }
+
+        p {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        }
+
+        body{
+        background-color: dark-green;
+        }
+
+        #program-output {
+          position: center
+        }
+
+
+      </style>
+  </head>
+
+  <!--the body contains the actual content of the webpage-->
+
+  <body>
+
+      <!--top of the web page-->
+
+      <header>
+        <h1>24-1: Automobile Repair Calculator</h1>
+      </header>
+
+      <!--an area set aside for navigating the webpage-->
+
+      <nav></nav>
+
+      <!--the "meat and potatoes of the page, this where most of the content is"-->
+
+      <main>
+      <div id="program-output">
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        </div>
+        <script>
+          //brings in your input
+          function show_prompt() {
+            let name = prompt("Please enter the customer's name.", "John Doe");
+            let hours = parseFloat(
+              prompt("Please enter number of hours worked.", "3.5")
+            );
+            let parts = parseFloat(
+              prompt("Please enter the cost of parts and supplies.", "23.55")
+            );
+
+            var hoursCost = hours * 35;
+            var partsTax = parts * 1.05;
+            var total = partsTax + hoursCost;
+
+            document.getElementById("demo1").innerHTML =
+              "&nbsp &nbsp &nbsp &nbsp" + name;
+            document.getElementById("demo2").innerHTML =
+              "Labor cost $" + hoursCost.toFixed(2);
+            document.getElementById("demo3").innerHTML =
+              "Parts cost $" + partsTax.toFixed(2);
+            document.getElementById("demo4").innerHTML =
+              "Total cost $" + total.toFixed(2);
+          }
+        </script>
+        <input
+          type="button"
+          onclick="show_prompt()"
+          value="Parts and Labor Calculator"
+        />
+      </main>
+
+      <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+
+      <footer>
+        <small
+          >&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong> Made with
+          love by: Ryne Scott Brown</small
+        >
+      </footer>
+  </body>
+</html>
