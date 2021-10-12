@@ -1,0 +1,237 @@
+/*Ryne Brown
+Progressive Final Project
+Updated Oct 4 2021
+*/
+
+/*this is a standard css reset i found online*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*this sets the font and background for basically the entire site.  minamilist*/
+body {
+  font-family: "open sans", sans-serif, monospace;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  margin: 1%;
+}
+
+h1 {
+  font-family: "Open sans", sans-serif, monospace;
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  margin-top: 5%;
+  padding-left: 1%;
+}
+/*this controls the behavior of images sitewide*/
+img {
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+
+/*below controls styles for the nav bar*/
+nav {
+  margin-top: 2%;
+  font-family: "Aldrich", sans-serif;
+  font-size: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+nav li {
+  display: inline;
+  color: rgb(10, 10, 10);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:link {
+  color: rgb(8, 8, 8);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: rgb(255, 1, 44);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*this controls the styling for the home page main element */
+
+#landing img {
+  float: right;
+  padding-top: 2%;
+  padding-right: 10%;
+  padding-left: 2%;
+}
+
+#landing p {
+  float: left;
+  font-size: xx-large;
+  width: 50%;
+}
+
+/*this adjusts footer styles*/
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*this is the styles for the enviroment page unordered list*/
+#enviroment ul {
+  list-style-type: circle;
+  margin: 1%;
+  padding: 1%;
+  overflow: hidden;
+}
+
+/*styles for the creative page*/
+.container {
+  background-color: slategray;
+  display: flex;
+  height: 450px;
+  width: 1300px;
+}
+
+#food_images img {
+  height: 380px;
+  width: 380px;
+  padding: 2%;
+  border-radius: 15%;
+}
+
+#creativity p {
+  padding-left: 1%;
+  width: 500px;
+}
+
+/*styles for the discipline page*/
+#discipline h1 {
+  width: 50%;
+}
+#discipline p {
+  width: 75%;
+}
+#discipline img {
+  float: right;
+  border-radius: 10%;
+}
+/*map styles on contact page*/
+iframe {
+  border: 15px white solid;
+  padding: 2%;
+  margin: 1%;
+}
+#contact img {
+  float: right;
+  padding-right: 25%;
+}
