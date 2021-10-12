@@ -1,0 +1,137 @@
+<!--
+Assignment 21-4  
+Name:Ryne Brown
+Class:1305 
+Instructor: Paul Long
+-->
+<!DOCTYPE html>
+<!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
+<html lang="en">
+  <!--the "brains" of the webpage-->
+
+  <head>
+    <!--various metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This displays the title of the webpage-->
+    <title>21-4</title>
+    <!--more metadata for responsive design-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--below links to an external style sheet-->
+
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <!--the body contains the actual content of the webpage-->
+
+  <body>
+    <div id="wrapper">
+      <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
+
+      <style>
+        p {
+          font-family: "Courier New", Courier, monospace;
+        }
+      </style>
+
+      <!--top of the web page-->
+
+      <header style= color: "red">
+        <h1>Sam's auto loan payoff amount calculator</h1>
+      </header>
+
+      <!--an area set aside for navigating the webpage-->
+
+      <nav></nav>
+
+      <!--the "meat and potatoes of the page, where most of the content is"-->
+
+      <main>
+	  
+		<!--
+		Problem 4
+
+Sam has a three-year auto loan at an 8.5% annual interest rate.
+His original loan was $7920.
+His monthly payment is $250.
+He has made payments on the loan for the past 18 months;
+he wants to know the payoff balance.
+Write a program to determine the payoff balance of Sam's auto loan.
+Prompt and answer in complete sentences.
+The applicable formula appears below:
+
+b = (ob * z) - p * ((z - 1)/i)
+
+where:
+
+b = payoff balance
+ob = original balance
+z = Math.pow(1 + i, n - k)
+p = monthly payment
+i = monthly interest rate
+k = number of payments already made
+n = total number of monthly payments
+		!-->
+		
+        <script>
+	function show_prompt() {
+	var b;
+	var ob = parseFloat(prompt("Please enter the original balance."));
+	var p = parseFloat(prompt("Please enter the monthly payment."));
+	var z;
+	var k = parseFloat(prompt("Please enter the number of months paid on the loan."));
+	var n = parseFloat(prompt("Please enter the total number of months on the loan."));
+	var i = parseFloat(prompt("Please enter the rate on the loan."));
+
+	var i = (i / 100) / 12;
+
+	var z = Math.pow(1 + i, n - k);
+
+	var b = (ob * z) - p * ((z - 1) / i);
+
+	document.getElementById("demo").innerHTML =
+		"The amount to pay off your loan is " +
+		b.toFixed(2)
+		".  Thank you for using this program.";
+
+
+
+}
+        </script>
+		
+
+        <p id="demo"></p>		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        <input type="button" onclick="show_prompt()" value="Run Light Speed Program" />
+		
+      </main>
+
+      <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+
+      <footer>
+	  
+        <small>
+		&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong>
+		Made with love by: Ryne Scott Brown
+		  </small
+        >
+      </footer>
+    </div>
+  </body>
+</html>

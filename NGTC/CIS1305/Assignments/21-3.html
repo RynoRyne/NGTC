@@ -1,0 +1,86 @@
+<!--
+Assignment 21-3  
+Name:Ryne Brown
+Class:1305 
+Instructor: Paul Long
+-->
+<!DOCTYPE html>
+<!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
+<html lang="en">
+  <!--the "brains" of the webpage-->
+
+  <head>
+    <!--various metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This displays the title of the webpage-->
+    <title>21-3</title>
+    <!--more metadata for responsive design-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--below links to an external style sheet-->
+
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <!--the body contains the actual content of the webpage-->
+
+  <body>
+    <div id="wrapper">
+      <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
+
+      <style>
+        p {
+          font-family: "Courier New", Courier, monospace;
+        }
+      </style>
+
+      <!--top of the web page-->
+
+      <header style= color: "red">
+        <h1>21-3</h1>
+      </header>
+
+      <!--an area set aside for navigating the webpage-->
+
+      <nav></nav>
+
+      <!--the "meat and potatoes of the page, where most of the content is"-->
+
+      <main>
+	  
+        <p id="demo"></p>
+		
+        <script>
+		
+          //code: now with reduced white space!!!
+          function show_prompt()
+		  {
+            let timeSeconds = prompt("Enter a time in seconds to calculate the distance in kilometers light traveled in that amount of time.");
+			let distance = timeSeconds *( 3 * 10 ** 8 ) / 1000;
+			document.getElementById("demo").innerHTML =
+			
+              "Light traveled approximatly " +
+             distance + " kilometers in " + timeSeconds + " seconds.";
+          }
+		  
+        </script>
+		
+        <input type="button" onclick="show_prompt()" value="Run Light Speed Program" />
+		
+      </main>
+
+      <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+
+      <footer>
+	  
+        <small>
+		&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong>
+		Made with love by: Ryne Scott Brown
+		  </small
+        >
+      </footer>
+    </div>
+  </body>
+</html>
