@@ -1,0 +1,9 @@
+let temp = prompt("Please enter the temperature.")
+if (temp > 85) {
+    var message = "It's hot outside!"
+} else if (temp >= 50) {
+    var message = "It's not too hot outside."
+} else if (temp < 50) {
+    var message = "It's cold outside."
+}
+print message

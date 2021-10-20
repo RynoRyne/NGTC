@@ -104,9 +104,9 @@ body {
 h1 {
   font-family: "Open sans", sans-serif, monospace;
   color: rgb(255, 255, 255);
-  font-size: 4em;
-  margin-top: 5%;
-  padding-left: 1%;
+  font-size: 3em;
+  margin: 2%;
+  padding: 1%;
 }
 /*this controls the behavior of images sitewide*/
 img {
@@ -118,7 +118,7 @@ img {
 
 /*below controls styles for the nav bar*/
 nav {
-  margin-top: 2%;
+  margin: 0.8%;
   font-family: "Aldrich", sans-serif;
   font-size: 3em;
 }
@@ -151,8 +151,8 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: black;
-  background-color: transparent;
+  color: white;
+  background-color: black;
   text-decoration: none;
 }
 
@@ -196,10 +196,11 @@ footer {
 
 /*styles for the creative page*/
 .container {
-  background-color: slategray;
+  background-color: rgb(255, 255, 255);
   display: flex;
   height: 450px;
   width: 1300px;
+  border-radius: 5%;
 }
 
 #food_images img {
