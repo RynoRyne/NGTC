@@ -71,6 +71,44 @@ Instructor: Paul Long
       <p id="demo2"></p>
       <p id="demo3"></p>
       <script>
+        //brings in your input
+        function show_prompt() {
+          var Discount;
+          var price;
+          var codeL = 0.5;
+          var codeF = 0.4;
+          var codeT = 0.33;
+          var codeQ = 0.2;
+          var codeZ = 1;
+
+          price = parseFloat(
+            prompt(
+              "Please enter a price.  Do not include a dollar sign.",
+              "12.34"
+            )
+          );
+          discount = prompt(
+            "Please enter a discount code, must capatilize.",
+            "L,F,T,Q,Z"
+          );
+          //makes price a number
+
+          if ((discount == "L")) {
+            finalPrice = price - (price * codeL);
+            discountAmount = "50%";
+          } else if ((discount == "F")) {
+            finalPrice = price - (price * codeF);
+            discountAmount = "40%";
+          } else if ((discount == "T")) {
+            finalPrice = price- (price * codeT);
+            discountAmount = "33%";
+          } else if ((discount == "Q")) {
+            finalPrice = price- (price * codeQ);
+            discountAmount = "20%";
+          } else if ((discount == "Z")) {
+            finalPrice = price;
+            discountAmount = "0%";
+          }
 
           document.getElementById("demo1").innerHTML =
             "The initial price is $" + price + ".";
@@ -78,44 +116,6 @@ Instructor: Paul Long
             "The discount amount is " + discountAmount + ".";
           document.getElementById("demo3").innerHTML =
             "The discounted price is $" + finalPrice + ".";
-        //brings in your input
-        function show_prompt() {
-          price = prompt(
-            "Please enter a price.  Do not include a dollar sign.",
-            "12.34"
-          );
-          discount = prompt("Please enter a discount code must capatilize.",
-            "L,F,T,Q,Z");
-          //makes price a number
-          parseFloat(price);
-
-          codeL = 0.5;
-          codeF = 0.4;
-          codeT = 0.33;
-          codeQ = 0.2;
-          codeZ = 1;
-
-          if ((discount = "L")) {
-            finalPrice = price * codeL;
-            discountAmount = "50%";
-          }
-          else if ((discount = "F")) {
-            finalPrice = price * codeF;
-            discountAmount = "40%";
-          }
-          else if ((discount = "T")) {
-            finalPrice = price * codeT;
-            discountAmount = "33%";
-          }
-          else if ((discount = "Q")) {
-            finalPrice = price * codeQ;
-            discountAmount = "20%";
-          }
-          else if ((discount = "Z")) {
-            finalPrice = price * codeZ;
-            discountAmont = "0%";
-          }
-
         }
       </script>
       <input type="button" onclick="show_prompt()" value="Discount" />

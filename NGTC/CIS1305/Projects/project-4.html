@@ -100,8 +100,10 @@ Instructor: Paul Long
             var grade;
             var counter = 0;
             var total = 0;
-
+            var avg;
             grade = parseFloat(prompt("Enter Grade", "-1"));
+
+          //This creates a while loop
 
             while (grade != -1) {
               total = total + grade;
@@ -110,6 +112,21 @@ Instructor: Paul Long
             grade = parseFloat(prompt("Enter Grade", "-1"));
             }
             document.getElementById("demo").innerHTML = message;
+
+          //this begins the if then statment
+
+            if (counter != 0)
+            {
+              avg = total / counter ;
+              var str = 'The average grade is' + avg + '.';
+              document.getElementById("demo").innerHTML = str;
+            }
+            else {
+              var str2 = 'No grades were entered';
+              document.getElementById("demo").innerHTML = str2;
+            }
+
+
           }
         </script>
         <div class="engage-button" id="button">
