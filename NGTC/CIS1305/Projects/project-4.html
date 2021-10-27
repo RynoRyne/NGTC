@@ -37,8 +37,8 @@ Instructor: Paul Long
       <style>
         body {
           font-family: "Rajdhani", sans-serif;
-          color: white;
-          background-color: rgb(2, 2, 2);
+          color: Black;
+          background-color: slate;
           margin: 2%;
           padding: 2%;
         }
@@ -52,7 +52,7 @@ Instructor: Paul Long
 
         h1 {
           background-color: lightgrey;
-          color: black;
+          color: dark grey;
           font-family: "Roboto", sans-serif;
         }
 
@@ -82,7 +82,7 @@ Instructor: Paul Long
       <!--top of the web page-->
 
       <header>
-        <h1 align="center">Project 3: Temperature Description Device</h1>
+        <h1 align="center">Project 4: Average Grade Calculator</h1>
       </header>
 
       <!--an area set aside for navigating the webpage-->
@@ -111,20 +111,19 @@ Instructor: Paul Long
 
             grade = parseFloat(prompt("Enter Grade", "-1"));
             }
-            document.getElementById("demo").innerHTML = message;
 
           //this begins the if then statment
 
             if (counter != 0)
             {
               avg = total / counter ;
-              var str = 'The average grade is' + avg + '.';
-              document.getElementById("demo").innerHTML = str;
+              var str = 'The average class grade is ' + avg + '.';
             }
             else {
-              var str2 = 'No grades were entered';
-              document.getElementById("demo").innerHTML = str2;
+              var str = 'No grades were entered';
             }
+
+            document.getElementById("demo").innerHTML = str;
 
 
           }
