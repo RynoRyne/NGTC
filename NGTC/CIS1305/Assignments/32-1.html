@@ -111,11 +111,11 @@ Instructor: Paul Long
           }
 
           document.getElementById("demo1").innerHTML =
-            "The initial price is $" + price + ".";
+            "The initial price is $" + price.toFixed(2) + ".";
           document.getElementById("demo2").innerHTML =
             "The discount amount is " + discountAmount + ".";
           document.getElementById("demo3").innerHTML =
-            "The discounted price is $" + finalPrice + ".";
+            "The discounted price is $" + finalPrice.toFixed(2) + ".";
         }
       </script>
       <input type="button" onclick="show_prompt()" value="Discount" />

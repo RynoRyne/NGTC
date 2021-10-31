@@ -31,12 +31,12 @@ Instructor: Paul Long
     <style>
       h1 {
         font-family: "Open Sans Condensed", sans-serif;
-        color: white;
+        color: black;
       }
 
       p {
         font-family: "Roboto", sans-serif;
-        color: white;
+        color:Black;
       }
 
       body {
@@ -66,14 +66,25 @@ Instructor: Paul Long
 
     <main>
       <div id="program-output">
-        <p id="demo1"></p>
+        <p style="margin-left: 40px;" id="demo1"></p>
         <p id="demo2"></p>
         <p id="demo3"></p>
         <p id="demo4"></p>
       </div>
       <script>
         //brings in your input
-        function show_prompt() {}
+        function show_prompt() {
+          var name = prompt ('Customer Name?')
+          var labor = parseFloat(prompt ('Hours of Labor?'))
+          var parts = parseFloat(prompt ('Cost of parts?'))
+          var laborCost = labor * 35
+          var total = labor + parts
+
+          document.getElementById('demo1').innerHTML = name
+          document.getElementById('demo2').innerHTML = 'Labor Cost $' + laborCost.toFixed(2)
+          document.getElementById('demo3').innerHTML = 'Parts Cost $' + parts.toFixed(2)
+          document.getElementById('demo4').innerHTML = 'Total Cost $' + total.toFixed(2)
+        }
       </script>
       <input
         type="button"
