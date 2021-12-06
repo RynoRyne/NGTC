@@ -82,10 +82,9 @@ Instructor: Paul Long
               message = "You are in the red.";
             } else if (profits == 0) {
               message = "You broke even.";
-              } else (profits > 0) {
-              message = "Grats, you're in the red.";
-          }
-            
+              } else if (profits > 0) {
+                message = "Grats!, You are in the black!";
+              }
           document.getElementById("demo1").innerHTML = message
           }
         </script>

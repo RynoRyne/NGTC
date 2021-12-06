@@ -1,0 +1,160 @@
+<!--
+Assignment:Project 3 
+Name:Ryne Brown
+Class:1305 
+Instructor: Paul Long
+-->
+<!DOCTYPE html>
+<!--This is a basic HTML template using a combonation of boilerplate and added semantic elements-->
+<html lang="en">
+  <!--the "brains" of the webpage-->
+
+  <head>
+    <!--various metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--This displays the title of the webpage-->
+    <title>Project 3</title>
+    <!--more metadata for responsive design-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--below links to import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!--the body contains the actual content of the webpage-->
+
+  <body>
+    <div id="wrapper">
+      <!--below is a little CSS for formatting purposes I plan to implement a stylesheet later-->
+
+      <style>
+        body {
+          font-family: "Rajdhani", sans-serif;
+          color: Black;
+          background-color: slate;
+          margin: 2%;
+          padding: 2%;
+        }
+
+        button {
+          font-size: 24px;
+          background-color: crimson;
+          border-radius: 25%;
+          font-family: "Rajdhani", sans-serif;
+        }
+
+        h1 {
+          background-color: lightgrey;
+          color: dark grey;
+          font-family: "Roboto", sans-serif;
+        }
+
+        .engage-button {
+          font-size: 24px;
+          background-color: crimson;
+          border-radius: 50%;
+          color: whitesmoke;
+          position: absolute;
+          left: 47%;
+        }
+
+        footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        #demo {
+          text-align: center;
+          font-size: 5em;
+        }
+      </style>
+
+      <!--top of the web page-->
+
+      <header>
+        <h1 align="center">Project 4: Average Grade Calculator</h1>
+      </header>
+
+      <!--an area set aside for navigating the webpage-->
+
+      <nav></nav>
+
+      <!--the "meat and potatoes of the page, this where most of the content is"-->
+
+      <main>
+        <p id="demo"></p>
+
+        <script>
+          //brings in user input
+          function show_prompt() {
+            var grade;
+            var counter = 0;
+            var total = 0;
+            var avg;
+            grade = parseFloat(prompt("Enter Grade", "-1"));
+
+          //This creates a while loop
+
+            while (grade != -1) {
+              total = total + grade;
+              counter = counter + 1;
+
+            grade = parseFloat(prompt("Enter Grade", "-1"));
+            }
+
+          //this begins the if then statment
+
+            if (counter != 0)
+            {
+              avg = total / counter ;
+              var str = 'The average class grade is ' + avg + '.';
+            }
+            else {
+              var str = 'No grades were entered';
+            }
+
+            document.getElementById("demo").innerHTML = str;
+
+
+          }
+        </script>
+        <div class="engage-button" id="button">
+          <input
+            class="engage-button"
+            type="button"
+            onclick="show_prompt()"
+            value="Engage!"
+          />
+        </div>
+      </main>
+
+      <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+
+      <footer>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p align="center">
+          <small
+            >&copy; Copyright 2021, Ryno Enterprieses <strong>|</strong> Made
+            with love by: Ryne Scott Brown</small
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+<!--end of document :)-->

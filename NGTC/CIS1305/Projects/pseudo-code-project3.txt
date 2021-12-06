@@ -1,0 +1,6 @@
+input temp
+var message
+if temp>85 var message="It's hot outside!"
+if else temp>=50 var message="It's not too hot outside."
+if else temp<50 var message="It's cold outside!"
+print message
