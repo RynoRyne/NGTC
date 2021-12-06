@@ -92,6 +92,10 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
+* {
+  box-sizing: border-box;
+}
 /*this sets the font and background for basically the entire site.  minamilist*/
 body {
   font-family: "open sans", sans-serif, monospace;
@@ -235,4 +239,43 @@ iframe {
 #contact img {
   float: right;
   padding-right: 25%;
+}
+#creativity {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+table {
+  width: auto;
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 1%;
+  text-align: center;
+}
+
+th {
+  border-bottom: 2px solid white;
+  height: fit-content;
+}
+
+tr:nth-child(even) {
+  background-color: antiquewhite;
+  color: black;
+}
+
+thead {
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  display: flexbox;
+  margin: 2%;
+  padding: 1%;
+  border: 3px solid red;
+}
+
+h2 {
+  margin: 2%;
+  font-weight: bold;
 }

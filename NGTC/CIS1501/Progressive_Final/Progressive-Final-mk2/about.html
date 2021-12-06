@@ -1,0 +1,100 @@
+<!--Author:Ryne Brown
+Date:10/21/2021
+Personal Website Mark II-->
+<!--This is a redisgn and reskin of my current progressive final with mobile first and modern methodology-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!--brains-->
+  <head>
+    <!--current metadata-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Title-->
+    <title>This is a Template!!!</title>
+    <!--Google Fonts and Viewport Queries-->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  </head>
+  <!--the body contains the actual content of the webpage-->
+  <body>
+    <div class="content">
+      <!--top of the web page-->
+      <header><nav>
+        <!--A new and improved responsive nav bar with hamburger-->
+        <div class="topnav" id="myTopnav">
+          <a href="./index.html">Home</a>
+          <a href="#theMind">Mind</a>
+          <a href="#theBody">Body</a>
+          <a href="#theSoul">Soul</a>
+          <a href="#contact">Contact</a>
+          <a href="./about.html" class="active">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            >&#9776;</a
+          >
+        </div>
+        <script>
+          /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+      </nav></header>
+      <!--an area set aside for navigating the webpage-->
+      
+      <!--the "meat and potatoes of the page, this where most of the content is"-->
+      <main>
+        <div id="about">
+          <h1>About Me</h1>
+          <article>
+            I have worked in the culinary field for more than a decade and though
+            I am now attempting to leave it, I will always have love for it. The
+            foodservice industry is fast paced and cut-throat to a certain degree
+            but it can be rewarding and amazing for the right kind of person. I
+            found this to be the case for the better part of 13 years, and while I
+            may no longer desire to be a chef, the passion and love of food is
+            still there. I currently am the Chef de Cuisine at
+            <a href="http://www.fortifyclayton.com/fortifypi/">Fortfiy Pi</a>
+            in Clayton, Georgia and am studying Web Application Development at
+            North Georgia Technical College. If you wish to sample my food drop by
+            Fortify Pi and check it out. <br />
+            -Ryne Brown
+            <br />
+
+          </article>
+            <figure>
+            <img
+              src="Images/profile_pic.jpg"
+              height="300"
+              width="300"
+              alt="profile picture"
+            />
+            <figcaption>Ryne Brown Circa 2018</figcaption>
+          </figure>
+        </div>
+      <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
+    </div>
+    <footer class="footer">
+      <small>&copy; Copyright 2021, Ryno Enterprieses</small>
+    </footer>
+  </body>
+</html>
+<!--end of document :)-->

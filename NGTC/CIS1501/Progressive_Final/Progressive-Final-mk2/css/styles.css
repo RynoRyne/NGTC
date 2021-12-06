@@ -140,10 +140,19 @@ body {
   height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /*Style rules for the body*/
 body {
   display: flex;
   flex-direction: column;
+}
+/*Style rules for the article section*/
+article {
+  margin: 0.5%;
+  background-color: white;
 }
 
 /* Styles for the top navigation bar */
@@ -226,7 +235,9 @@ body {
 H1 {
   background-color: white;
   color: red;
-  font-size: 3em;
+  font-size: 4em;
+  margin: 0.5%;
+  display: inline;
 }
 
 /*content flexbox*/
@@ -237,4 +248,90 @@ H1 {
 
 .footer {
   margin-top: auto;
+}
+
+/*styles for the creative page*/
+.container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  height: 450px;
+  width: 1300px;
+  border-radius: 5%;
+}
+
+#food_images img {
+  height: 380px;
+  width: 380px;
+  padding: 2%;
+  border-radius: 15%;
+}
+
+#creativity p {
+  padding-left: 1%;
+  width: 500px;
+}
+
+/*styles for the discipline page*/
+#discipline h1 {
+  width: 50%;
+}
+#discipline p {
+  width: 75%;
+}
+#discipline img {
+  float: right;
+  border-radius: 10%;
+}
+/*map styles on contact page*/
+iframe {
+  border: 15px white solid;
+  padding: 2%;
+  margin: 1%;
+}
+#contact img {
+  float: right;
+  padding-right: 25%;
+}
+
+/*this controls the styling for the home page main element */
+
+#landing img {
+  float: right;
+  padding-top: 2%;
+  padding-right: 10%;
+  padding-left: 2%;
+}
+
+#landing p {
+  float: left;
+  font-size: xx-large;
+  width: 50%;
+}
+/*this controls the behavior of images sitewide*/
+img {
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (min-width: 601px), print {
+  img {
+    size-adjust: 100%;
+  }
+
+  #about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1%;
+    column-width: auto;
+  }
+
+  h1 {
+    background-color: #555;
+  }
+
+  article {
+    font-size: 2em;
+  }
 }

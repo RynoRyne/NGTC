@@ -19,6 +19,24 @@
       href="https://fonts.googleapis.com/css2?family=Aldrich&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Images/favicon_io/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="./Images/favicon_io/site.webmanifest" />
   </head>
   <!--the body contains the actual content of the webpage-->
   <body>
@@ -68,7 +86,78 @@
             allowfullscreen=""
             loading="lazy"
           ></iframe>
+          <br>
+          <br>
+          <table id="schedule">
+            <thead>Times Present at Pi for Drop By Meetings</thead>
+            <tr>
+              <th> </th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+          <tr>
+            <td>AM</td>
+            <td>OFF</td>
+
+            <td>Present</td>
+
+            <td>OFF</td>
+
+            <td>Present</td>
+
+            <td>Present</td>
+
+            <td>Present</td>
+
+            <td>Present</td>
+          </tr>
+          <tr>
+            <td>PM
+            </td>
+            <td>OFF</td>
+
+            <td>OFF</td>
+
+            <td>Present</td>
+
+            <td>OFF</td>
+
+            <td>Present</td>
+
+            <td>Present</td>
+
+            <td>OFF</td>
+          </tr>
+          </table>
+<br>
+<br>
+<br>
         </p>
+          <h2>Contact Me for Catering or Consultation</h2>
+          <form id="contact-form" method="post" action="mailto:rynebrown88@gmail.com">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" value="Tell me who you are">
+            <br>
+            <label for="service" id="service">What service would you like?</label>
+            <br>
+
+            <label for="service">Catering</label>
+            <input type="radio" id="service" value="catering">
+
+            <label for="service">Consultation</label>
+            <input type="radio" id="service" value="Consultation">
+  <label for="info"> I would like more information about these services please</label>
+  
+  <input type="checkbox" id="info" name="info" value="info"><br>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit">
+          </form>
       </div>
     </main>
     <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
