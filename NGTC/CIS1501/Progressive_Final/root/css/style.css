@@ -246,26 +246,35 @@ iframe {
 }
 
 table {
-  width: auto;
-  border: 1px solid white;
+  table-layout: fixed;
+  width: 50%;
+  height: 20%;
+  border: 3px solid white;
   border-collapse: collapse;
-  padding: 1%;
+  padding: 5%;
   text-align: center;
 }
 
 th {
   border-bottom: 2px solid white;
   height: fit-content;
+  padding: 2%;
+}
+
+tr {
+  padding: 2%;
+  margin: 2%;
 }
 
 tr:nth-child(even) {
-  background-color: antiquewhite;
+  background-color: rgb(99, 99, 99);
   color: black;
 }
 
 thead {
   font-weight: bold;
   text-align: center;
+  padding: 2%;
 }
 
 form {

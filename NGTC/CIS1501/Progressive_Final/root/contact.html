@@ -86,12 +86,14 @@
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-          <br>
-          <br>
-          <table id="schedule">
-            <thead>Times Present at Pi for Drop By Meetings</thead>
-            <tr>
-              <th> </th>
+          <br />
+          <br />
+        </p>
+
+        <h2>Times available at Pi for drop in</h2>
+        <table id="schedule">
+          <tr>
+            <th></th>
             <th>Monday</th>
             <th>Tuesday</th>
             <th>Wednesday</th>
@@ -117,8 +119,7 @@
             <td>Present</td>
           </tr>
           <tr>
-            <td>PM
-            </td>
+            <td>PM</td>
             <td>OFF</td>
 
             <td>OFF</td>
@@ -133,31 +134,41 @@
 
             <td>OFF</td>
           </tr>
-          </table>
-<br>
-<br>
-<br>
-        </p>
-          <h2>Contact Me for Catering or Consultation</h2>
-          <form id="contact-form" method="post" action="mailto:rynebrown88@gmail.com">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" value="Tell me who you are">
-            <br>
-            <label for="service" id="service">What service would you like?</label>
-            <br>
+        </table>
+        <br />
+        <br />
+        <br />
+        <h2>Contact Me for Catering or Consultation</h2>
+        <form
+          id="contact-form"
+          method="post"
+          action="mailto:rynebrown88@gmail.com"
+        >
+          <label for="name">Your Name</label>
+          <input type="text" id="name" value="Tell me who you are" />
+          <br />
+          <label id="service">What service would you like?</label>
+          <br />
 
-            <label for="service">Catering</label>
-            <input type="radio" id="service" value="catering">
+          <label for="catering">Catering</label>
+          <input type="radio" name="catering" id="catering" value="catering" />
 
-            <label for="service">Consultation</label>
-            <input type="radio" id="service" value="Consultation">
-  <label for="info"> I would like more information about these services please</label>
-  
-  <input type="checkbox" id="info" name="info" value="info"><br>
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email">
-  <input type="submit">
-          </form>
+          <label for="consultation">Consultation</label>
+          <input
+            type="radio"
+            name="consultation"
+            id="consultation"
+            value="Consultation"
+          />
+          <label for="info">
+            I would like more information about these services please</label
+          >
+
+          <input type="checkbox" id="info" name="info" value="info" /><br />
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" />
+          <input type="submit" />
+        </form>
       </div>
     </main>
     <!--below is the bottom of the webpage, useful for odds and ends as well as copyright information-->
